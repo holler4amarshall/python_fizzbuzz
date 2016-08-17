@@ -5,7 +5,7 @@ try:
         number = int((sys.argv[1]))
         print 'sys arg number = ' + str(number)
 
-    # here, I tried to put in an else statement to capture user input, but could never get it to work.... so split it into a strange nested try / except
+    # possibly move the input() here, as an else statement.
 
 except:
     try:
@@ -16,6 +16,8 @@ except:
         print "invalid number entered"
 
 def fizz_buzz(number):
+    """print range of numbers from 1 to user defined number. if number divisible by 3, print fizz.
+    if number divisible by 5, print buzz. if number divisible by both, print fizzbuzz."""
 
     result = ''
     print 'Fizz Buzz counting up to ' + str(number)
